@@ -1,4 +1,8 @@
 
+//Doing this puts classes on THREE namespace, but imports all and doesn't tree shake properly.
+//import * as THREE from '../../node_modules/three/src/Three.js';
+
+// Doing this is tedious and doesn't namespace
 import '../../node_modules/three/src/polyfills.js';
 import { WebGLRenderer as WebGLRenderer } from '../../node_modules/three/src/renderers/WebGLRenderer.js';
 import { PerspectiveCamera as PerspectiveCamera } from '../../node_modules/three/src/cameras/PerspectiveCamera.js';
@@ -8,6 +12,8 @@ import { Mesh as Mesh } from '../../node_modules/three/src/objects/Mesh.js';
 import { BoxGeometry as BoxGeometry } from '../../node_modules/three/src/geometries/BoxGeometry.js';
 import { AmbientLight as AmbientLight } from '../../node_modules/three/src/lights/AmbientLight.js';
 import { DirectionalLight as DirectionalLight } from '../../node_modules/three/src/lights/DirectionalLight.js';
+
+// Probably should create file like '../../node_modules/three/src/Three.js' that only exports the needed classes
 
 var App = {
   canvasContainer: document.getElementById('three-container'),

@@ -45,7 +45,7 @@ var App = {
     this.scene.add(directionalLight);
 
     window.addEventListener('resize', this.onWindowResize.bind(this));
-    
+
   },
   animate: function(){
     this.mesh.rotation.x += 0.005;

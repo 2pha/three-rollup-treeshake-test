@@ -12,9 +12,11 @@
   "license": "ISC",
   "devDependencies": {
     "rollup": "^0.41.5",
+    "rollup-plugin-closure-compiler-js": "^1.0.4",
     "rollup-plugin-filesize": "^1.0.1",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1",
     "three": "^0.84.0"
-  }
+  },
+  "dependencies": {}
 }

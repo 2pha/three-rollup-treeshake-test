@@ -41,9 +41,13 @@ export default {
     glsl(),
     uglify(),
     // closure({
-    // 	compilationLevel: 'ADVANCED',
-    // 	externs: './src/js/externs.js',
-    // 	warningLevel: 'VERBOSE'
+    //   compilationLevel: 'SIMPLE',
+    //   //compilationLevel: 'ADVANCED',
+    //   // Can't get externs file to load, so just add as src.
+    // 	externs: [
+    //     {src: 'var THREE; var WebGL2RenderingContext;'}
+    //   ],
+    // 	//warningLevel: 'VERBOSE'
     // }),
     filesize()
   ]
